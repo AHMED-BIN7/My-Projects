@@ -1,0 +1,6 @@
+﻿  ATMSystemProject.cpp
+D:\ProjectC++\ProjectForCourse7\ATM\ATMSystemProject\ATMSystemProject.cpp(49,28): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+D:\ProjectC++\ProjectForCourse7\ATM\ATMSystemProject\ATMSystemProject.cpp(234,43): warning C4244: 'argument': conversion from 'double' to 'short', possible loss of data
+D:\ProjectC++\ProjectForCourse7\ATM\ATMSystemProject\ATMSystemProject.cpp(284,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\ProjectC++\ProjectForCourse7\ATM\ATMSystemProject\ATMSystemProject.cpp(195,1): warning C4715: 'GetQuickWithdrawOption': not all control paths return a value
+  ATMSystemProject.vcxproj -> D:\ProjectC++\ProjectForCourse7\ATM\x64\Debug\ATMSystemProject.exe

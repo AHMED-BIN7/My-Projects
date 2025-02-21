@@ -1,0 +1,800 @@
+void FileRandomMatrisx(int arry[10][10],int Row,int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            arry[i][j] = RandomNumber(1, 100); 
+        }
+    }
+}
+void PrintMatrix(int arry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            cout << setw(3) << arry[i][j] << "\t";
+        }
+        cout << endl;
+    }
+}
+int SumRows(int arry[10][10], int RowNumber, int Col)
+{
+    int SumMatrix = 0;
+
+    for (int i = 0; i < Col; i++)
+    {
+        SumMatrix += arry[RowNumber][i];
+    }
+      return SumMatrix;
+}
+void SumRowsMatrixToArry(int arry[10], int TowArry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row ; i++)
+    {
+        arry[i] = SumRows(TowArry, i, Col);
+    }
+}
+void PrintMatrixInArry(int arry[10],int Row)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        cout << "Row" << i + 1 << " Sum = " << arry[i] << endl;
+    }
+}
+void PrintSumRows(int arry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        cout << "Row " << i + 1 << " Sum = " << SumRows(arry, i, Col) << endl;
+    }
+}
+int ColumSum(int TowArry[10][10], int Row, int ColNumber)
+{
+    int SumColums = 0;
+    for (int i = 0; i < Row; i++)
+    {
+        SumColums += TowArry[i][ColNumber];
+    }
+    return SumColums;
+}
+void PrintSumColums(int TowArry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Col; i++)
+    {
+        cout << "Colum " << i + 1 << " Sum = " << ColumSum(TowArry, Row, i) << endl;
+    }
+}
+void SumColumsMatrixToArry(int arry[10], int TowArry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        arry[i] = ColumSum(TowArry, Row, i);
+    }
+}
+void PrintColumSum(int arry[10], int Row)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        cout << "Colum " << i + 1 << " Sum = " << arry[i] << endl;
+    }
+}
+void MatrixOfOrderNumbers(int TowArry[10][10], int Row, int Col)
+{
+    int Conter = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            Conter++;
+            TowArry[i][j] = Conter;
+        }
+    }
+}
+void MatrixTranspose(int TowArry[10][10],int arryTranspose[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            arryTranspose[j][i] = TowArry[i][j];
+        }
+    }
+}
+void FileMatrixFrom1To10(int TowArry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            TowArry[i][j] = RandomNumber(1, 100);
+        }
+    }
+}
+void PrintMatrixWithFormating(int TowArry[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            //printf("%0*d\t", 2, TowArry[i][j]);
+            cout << TowArry[i][j] << "\t";
+        }
+        cout << endl;
+    }
+}
+void MultiplyMatrix(int TowArry[10][10],int Matrix1[10][10], int Matrix2[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            TowArry[i][j] = Matrix1[i][j] * Matrix2[i][j];
+        }
+    }
+}
+void MiddleRowInMatrix(int TowArry[10][10],int Row, int Col)
+{
+    int MiddleRow = round(Row / 2);
+
+    for (int i = 0; i < Col; i++)
+    {
+       printf("%0*d\t",3,TowArry[MiddleRow][i]);
+    }
+}
+void MiddleColumInMatrix(int TowArry[10][10], int Row, int Col)
+{
+    int MiddleCol = round(Col / 2);
+
+    for (int i = 0; i < Col; i++)
+    {
+        printf("%0*d\t", 3, TowArry[i][MiddleCol]);
+    }
+}
+int SumOfAllMatrix(int TowArry[10][10], int Row, int Col)
+{
+    int SumAllMatrix = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            SumAllMatrix += TowArry[i][j];
+        }
+    }
+
+    return SumAllMatrix;
+}
+bool MatrixEquaOrNot(int Matrix1[10][10], int Matrix2[10][10], int Row, int Col)
+{
+    return (SumOfAllMatrix(Matrix1, Row, Col) == SumOfAllMatrix(Matrix2, Row, Col));
+}
+bool AreTipyicalMatrixes(int Matrix1[10][10], int Matrix2[10][10], int Row, int Col)
+{
+    bool Equal = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (Matrix1[i][j] != Matrix2[i][j]) {
+
+                return 0;
+            }
+        }
+    }
+    return 1;
+   
+}
+bool IdentityMatrix(int Matrix[10][10], int Row, int Col)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (i ==j && Matrix[i][j] !=1) {
+
+                return false;
+            }
+            else if (i != j && Matrix[i][j] != 0) {
+
+                return false;
+            }
+        }
+    }
+    return true;
+}
+bool ScalarMatrix(int Matrix[10][10], int Row, int Col)
+{
+    int FirstDaiagonal = Matrix[0][0];
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (i != j && Matrix[i][j] != 0)
+            {
+                return false;
+            }
+            else if (i == j && Matrix[i][j] == 0)
+            {
+                return false;
+            }
+            else if (i == j && Matrix[i][j] != FirstDaiagonal)
+            {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+int CountNumberInMatrix(int Matrix[10][10], int Row, int Col, int Number)
+{
+    int Counter = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Row; j++)
+        {
+            if (Matrix[i][j] == Number) {
+
+                Counter++;
+            }
+        }
+    }
+    return Counter;
+}
+int CountNumberInMatrixWithoutZro(int Matrix[10][10], int Row, int Col)
+{
+    int Counter = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Row; j++)
+        {
+            if (Matrix[i][j] != 0) {
+
+                Counter++;
+            }
+        }
+    }
+    return Counter;
+}
+bool IsSparce(int Matrix[10][10], int Row, int Col)
+{
+    // To Konw Size Of Matrix : Row * Col = 9
+    int MatrixSize = Row * Col;
+    return ((MatrixSize/2) <= CountNumberInMatrix(Matrix, 3, 3, 0));
+    //return (CountNumberInMatrixWithoutZro(Matrix, 3, 3) <= CountNumberInMatrix(Matrix, 3, 3, 0));
+}
+bool ChackNumberInMatrix(int Matrix[10][10], int Row, int Col,int Number)
+{
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (Matrix[i][j] == Number) {
+
+                return true;
+            }
+        }
+    }
+    return false;
+}
+void IntersectedNumberInMatrix(int Matrix1[10][10], int Matrix2[10][10], int Row, int Col)
+{
+    int Number;
+
+    for (int i = 0; i < Row;i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            Number = Matrix1[i][j];
+
+            if (ChackNumberInMatrix(Matrix2,Row,Col,Number)) {
+
+                cout << Number << "\t";
+            }
+        }
+    }
+}
+int MaximumNumberInMatrix(int Matrix[10][10], int Row, int Col)
+{
+    int MaxNumber = Matrix[0][0];
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (Matrix[i][j] > MaxNumber)
+            {
+                MaxNumber = Matrix[i][j];
+            }
+            
+        }
+    }
+    return MaxNumber;
+}
+int MinimumNumberInMatrix(int Matrix[10][10], int Row, int Col)
+{
+    int MinNumber = Matrix[0][0];
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col; j++)
+        {
+            if (Matrix[i][j] < MinNumber)
+            {
+                MinNumber = Matrix[i][j];
+            }
+
+        }
+    }
+    return MinNumber;
+}
+void ReversMatrix(int Matrix1[10][10], int reversMatrix[10][10], int Row, int Col)
+{
+    int Colum = 0;
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = Col; j < 0; j--)
+        {
+            j--;
+            reversMatrix[i][Colum] = Matrix1[i][j];
+            Colum++;
+        }
+    }
+}
+int IsPalindromeMatrix(int Matrix[10][10],int Row, int Col)
+{
+     // Col / 2 because i don't want to complete to left part,it will stop at 1
+
+    for (int i = 0; i < Row; i++)
+    {
+        for (int j = 0; j < Col/2; j++)
+        {
+            if (Matrix[i][j]!= Matrix[i][Col -1-j]) {
+
+                return false;
+            }
+        }
+    }
+    return true;
+}
+void FibonacciSeries(int Number)
+ {
+     int Prev1 = 1, Prev2 = 0;
+     int Fibonacci = 0;
+
+     for (int i = 2; i <= Number; i++)
+     {
+         Fibonacci = Prev1 + Prev2;
+         cout << Fibonacci << " ";
+         Prev2 = Prev1;
+         Prev1 = Fibonacci;
+
+
+     }
+
+     cout << endl;
+ }
+void FibonacciSeriesRecursion(int Number,int Prev1,int Prev2)
+{
+   
+    int Fibonacci = 0;
+
+    if (Number > 0) {
+
+        Fibonacci = Prev1 + Prev2;
+        Prev2 = Prev1;
+        Prev1 = Fibonacci;
+        
+        cout << Fibonacci << " ";
+
+        FibonacciSeriesRecursion(Number -1, Prev1, Prev2);
+    }
+}
+string ReadString()
+{
+    string Name;
+    cout << "Enter Clinet Accont Number : ";
+    getline(cin, Name);
+    cout << "\n\n";
+    return Name;
+
+}
+char ReadChractar()
+{
+    char Charcter = ' ';
+    cout << "Enter Letter : ";
+    cin >> Charcter;
+
+    return Charcter;
+}
+void PrintFirstLetter(string S1)
+{
+    bool IsFirstletter = true;
+
+    for (int i = 0; i <= S1.length(); i++)
+    {
+        if (S1[i] != ' ' && IsFirstletter == true)
+        {
+            cout << S1[i] << endl;
+        }
+
+        IsFirstletter = ((S1[i] == ' ') ? true : false);
+    }
+}
+string PrintFirstLetterUpper(string S1)
+{
+    bool IsFirstLetter = true;
+
+    for (int i = 0; i <= S1.length(); i++)
+    {
+        if (S1[i] != ' ' && IsFirstLetter == true) {
+
+            S1[i] = toupper(S1[i]);
+        }
+        IsFirstLetter = ((S1[i] == ' ') ? true : false);
+    }
+
+    return S1;
+}
+string PrintFirstLetterLower(string S1)
+{
+    bool IsFirstLetter = true;
+
+    for (int i = 0; i <= S1.length(); i++)
+    {
+        if (S1[i] != ' ' && IsFirstLetter == true)
+        {
+            S1[i] = tolower(S1[i]);
+        }
+
+        IsFirstLetter = (S1[i] == ' ') ? true : false;
+    }
+
+    return S1;
+}
+string UpperSentence(string Sentence)
+{
+    for (int i = 0; i < Sentence.length(); i++)
+    {
+        Sentence[i] = toupper(Sentence[i]);
+    }
+    return Sentence;
+}
+string LowerSentnce(string Sentence)
+{
+    for (int i = 0; i < Sentence.length(); i++)
+    {
+        Sentence[i] = tolower(Sentence[i]);
+    }
+
+    return Sentence;
+}
+char Invertcharacter(char S1)
+{
+    return isupper(S1) ?  tolower(S1) :  toupper(S1);
+}
+string InverAllLetter(string S1)
+{
+    for (int i = 0; i <= S1.length(); i++)
+    {
+        S1[i] = Invertcharacter(S1[i]);
+    }
+    return S1;
+}
+void CountSmallandCapitalLetter(string S1)
+{
+    short CountSmallLetter = 0;
+    short CountCapitalLetter = 0;
+
+    for (int i = 0; i <= S1.length(); i++)
+    {
+        if (isupper(S1[i]))
+        {
+            CountCapitalLetter++;
+        }
+        else if (islower(S1[i])){
+            CountSmallLetter++;
+        }
+    }
+
+    cout << "SmallLetters : " << CountSmallLetter << endl;
+    cout << "CapitalLetters : " << CountCapitalLetter << endl;
+}
+int ConutOneLetter(string S1, char Charcter)
+{
+    short Conut = 0;
+    
+    for (int i = 0; i < S1.length(); i++)
+    {
+        if (S1[i] == Charcter)
+            Conut++;
+    }
+    
+    return Conut;
+}
+int ConutOneLetter2(string S1, char Charcter, bool Machcase = true)
+{
+    short Conut = 0;
+
+    for (int i = 0; i < S1.length(); i++)
+    {
+        if (Machcase){
+            if (S1[i] == Charcter)
+                Conut++;
+        }
+        else
+        {
+            if (tolower(Charcter) == tolower(S1[i]))
+                Conut++;
+        }
+    }
+
+    return Conut;
+}
+bool IsVowal(char S1)
+{
+    char Vaowl[5] = { 'a','i','u','o','e' };
+    S1 = tolower(S1);
+
+    for (short i = 0; i < 5; i++)
+    {
+        if (S1 == Vaowl[i])
+        {
+            return true;
+        }
+    }
+    return false;
+}
+int ConutVowel(string S1)
+{
+    int Conut = 0;
+
+    for (int i = 0; i < S1.length(); i++)
+    {
+        if (IsVowal(S1[i]))
+        {
+            Conut++;
+        }
+    }
+
+    return Conut;
+}
+void PrintAllVowelInString(string S1)
+{
+    for (int i = 0; i < S1.length(); i++)
+    {
+        if (IsVowal(S1[i]))
+        {
+            cout << S1[i] << "\t";
+        }
+    }
+}
+void PrintEachWordInString2(string S1)
+{
+    string delim = " ";
+    short pos = 0;
+    string sWord;
+    int conut = 0;
+    // اذ مافي فراغ يعني مافي كلمات افصل بينها فبيطلع من الوايل
+
+    while ((pos = S1.find(delim)) != std::string::npos)
+    {
+        sWord = S1.substr(0, pos);
+        if (sWord != " ")
+        {
+            cout << sWord << endl;
+        }
+
+        S1.erase(0, pos + delim.length());
+    }
+
+    if (S1 != " ")
+    {
+        cout << S1 << endl;
+    }
+}
+int ConutWordInSting(string S1)
+{
+    string delim = " ";
+    string sWord;
+    short Conut = 0;
+    short pos = 0;
+
+    while ((pos = S1.find(delim)) != std::string::npos)
+    {
+        sWord = S1.substr(0, pos);
+        if (sWord != " ")
+        {
+            Conut++;
+        }
+
+        S1.erase(0, pos + delim.length());
+    }
+    if (S1 != " ")
+    {
+        Conut++;
+    }
+
+    return Conut;
+}
+vector <string> Split2(string S1, string delim)
+{
+    vector <string> vSplit;
+
+    string sWord;
+    short pos = 0;
+
+    while ((pos = S1.find(delim)) != std::string::npos)
+    {
+        sWord = S1.substr(0, pos);
+        if (sWord != delim)
+        {
+            vSplit.push_back(sWord);
+        }
+
+        S1.erase(0, pos + delim.length());
+    }
+    if (S1 != delim)
+    {
+        vSplit.push_back(S1);
+    }
+
+    return vSplit;
+}
+string TrimLeft(string S1)
+{
+    for (short i = 0; i < S1.length(); i++)
+    {
+        if (S1[i] != ' ') {
+
+            return S1.substr(i, S1.length() - 1);
+        }
+    }
+    return "";
+}
+string TrimRight(string S1)
+{
+    for (short i = S1.length()-1; i >= 0; i--)
+    {
+        if (S1[i] != ' ') {
+
+            return S1.substr(0, i + 1);
+        }
+    }
+    return "";
+}
+string Trim(string S1)
+{
+    return TrimLeft(TrimRight(S1));
+}
+string JoinVectorOfString(vector <string> vNames, string delim)
+{
+    string S1 = "";
+
+    for (string& Line : vNames)
+    {
+        S1 += Line + delim;
+    }
+
+    return S1.substr(0, S1.length() - delim.length());
+}
+string JoinVectorOfString(string Name[],short Lenght, string delim)
+{
+    string S1 = "";
+
+    for (short i = 0; i < Lenght; i++)
+    {
+        S1 += Name[i] + delim;
+    }
+
+    return S1.substr(0, S1.length() - delim.length());
+}
+void ReversWord(string arryWord[20],string S1, string delim = " ")
+{
+    string Word = "";
+    short pos = 0;
+    short Conut = 0;    
+
+    while ((pos = S1.find(delim)) != std::string::npos)
+    {
+        Word = S1.substr(0, pos);
+        if (Word != delim)
+        {
+            arryWord[Conut] = Word;
+            Conut++;
+        }
+        S1.erase(0, pos + delim.length());
+    }
+    if (S1 != " ")
+    {
+        arryWord[Conut] = S1;
+    }
+}
+void PrintReverseWord(string arryWord[20],short Lenght, string S1)
+{
+    for (short i = Lenght - 1; i >= 0; i--)
+    {
+        if (i == Lenght) {
+            cout << arryWord[i];
+        }
+        cout << arryWord[i] << " ";
+    }
+    cout << endl;
+}
+string ReversWordInstringbyiterator(string S1)
+{
+    vector <string> vWord;
+    string S2 = "";
+    vWord = Split2(S1," ");
+
+    vector <string>::iterator iter = vWord.end();
+
+    while (iter != vWord.begin())
+    {
+        --iter;
+        S2 += *iter + " ";
+    }
+
+    S2 = S2.substr(0, S2.length() - 1);
+
+    return S2;
+}
+string ReplecWords(string S1, string ReplesWord, string ChangingWord, bool Mach = true)
+{
+    vector<string>vWord = Split2(S1, " ");
+    
+    for (string &Line : vWord)
+    {
+        if (Mach) {
+
+            if (Line == ReplesWord)
+            {
+                Line = ChangingWord;
+            }
+        }
+        else {
+
+            if (LowerSentnce(Line) == LowerSentnce(ReplesWord))
+            {
+                Line = ChangingWord;
+            }
+        } 
+    }
+    
+    return JoinVectorOfString(vWord," ");
+
+    // Abu-Hadod Code ...
+
+    /*short pos = S1.find(ReplesWord);
+
+    while (pos != std::string::npos)
+    {
+        S1 = S1.replace(pos, ReplesWord.length(), ChangingWord);
+        pos = S1.find(ReplesWord);
+    }
+    return S1;*/
+
+
+}
+string RemovePunctuation(string S1)
+{
+    short pos = 0;
+    string S2 = "";
+
+    for (int i = 0; i < S1.length(); i++)
+    {
+        if (!ispunct(S1[i])) {
+
+            S2 += S1[i];
+        }
+    }
+
+    return S2;
+}
