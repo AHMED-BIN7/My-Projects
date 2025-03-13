@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\OOP Libraries and practices.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|solutionrelative:OOP Libraries and practices\\OOP Libraries and practices.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsDate.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|solutionrelative:OOP Libraries and practices\\clsDate.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsPeriod.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|solutionrelative:OOP Libraries and practices\\clsPeriod.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{097EEE55-87C0-44B6-AC37-2A0A10EBD745}|OOP Libraries and practices\\OOP Libraries and practices.vcxproj|solutionrelative:OOP Libraries and practices\\clsString.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 181,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clsPeriod.h",
+              "DocumentMoniker": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsPeriod.h",
+              "RelativeDocumentMoniker": "OOP Libraries and practices\\clsPeriod.h",
+              "ToolTip": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsPeriod.h",
+              "RelativeToolTip": "OOP Libraries and practices\\clsPeriod.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-13T11:34:08.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsString.h",
+              "DocumentMoniker": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsString.h",
+              "RelativeDocumentMoniker": "OOP Libraries and practices\\clsString.h",
+              "ToolTip": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsString.h",
+              "RelativeToolTip": "OOP Libraries and practices\\clsString.h",
+              "ViewState": "AgIAAIgBAAAAAAAAAAArwKABAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-13T11:34:01.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clsDate.h",
+              "DocumentMoniker": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsDate.h",
+              "RelativeDocumentMoniker": "OOP Libraries and practices\\clsDate.h",
+              "ToolTip": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\clsDate.h",
+              "RelativeToolTip": "OOP Libraries and practices\\clsDate.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-13T11:32:03.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OOP Libraries and practices.cpp",
+              "DocumentMoniker": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\OOP Libraries and practices.cpp",
+              "RelativeDocumentMoniker": "OOP Libraries and practices\\OOP Libraries and practices.cpp",
+              "ToolTip": "D:\\ProjectC\u002B\u002B\\OOP Libraries and practices\\OOP Libraries and practices\\OOP Libraries and practices.cpp*",
+              "RelativeToolTip": "OOP Libraries and practices\\OOP Libraries and practices.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-13T11:26:39.678Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 159,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

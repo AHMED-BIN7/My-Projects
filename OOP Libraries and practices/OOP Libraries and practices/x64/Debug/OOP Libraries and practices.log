@@ -1,0 +1,35 @@
+﻿  OOP Libraries and practices.cpp
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(218,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(241,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(265,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(289,35): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(330,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsString.h(371,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsDate.h(937,30): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsDate.h(990,22): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsDate.h(996,33): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsDate.h(1006,19): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+D:\ProjectC++\OOP Libraries and practices\OOP Libraries and practices\clsDate.h(1011,26): warning C4267: '=': conversion from 'size_t' to 'short', possible loss of data
+  (compiling source file 'OOP%20Libraries%20and%20practices.cpp')
+  
+  OOP Libraries and practices.vcxproj -> D:\ProjectC++\OOP Libraries and practices\x64\Debug\OOP Libraries and practices.exe
